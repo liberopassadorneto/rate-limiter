@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este projeto implementa um Rate Limiter em Go que limita o número de requisições por segundo com base no endereço IP ou em um token de acesso. Utiliza Redis para armazenar as informações de limitação e pode ser configurado via variáveis de ambiente ou arquivo `.env`.
+Este projeto implementa um Rate Limiter em Go que limita o número de requisições por segundo com base no endereço IP ou em um token de acesso. Utiliza Redis para armazenar as informações de limitação e pode ser configurado via `.env`.
 
 ## Funcionalidades
 
