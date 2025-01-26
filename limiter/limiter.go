@@ -59,3 +59,11 @@ func (rl *RateLimiter) Allow(ip, token string) (bool, string, error) {
 	}
 	return true, "", nil
 }
+
+func (rl *RateLimiter) IsBlocked(identifier string) (bool, error) {
+	if identifier == "" {
+		return false, nil
+	}
+
+	return rl.strategy.IsBlocked(identifier)
+}
